@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="library">
+            <h1 id="libraryhead">Actual Title</h1>
+            <button id="showform">Add Book</button>
+            <form id="addbookform" class="hidden">
+                <label for="title">Title:</label>
+                <input type="text" id="title" class="forminput">
+                <label for="author">Author:</label>
+                <input type="text" id="author" class="forminput">
+                <label for="pgcnt">Page Count:</label>
+                <input type="text" id="pgcnt" class="forminput">
+                <label for="readcheck">Read:</label>
+                <input type="checkbox" id="readcheck" class="forminput">
+                <button id="addbook">Add</button>
+                <button id="closeform">Close</button>
+            </form>
+            <ul id="bookshelf">
+                <li class="book hidden">
+                    <div class="buttons">
+                        <button>Read</button>
+                        <button>Delete</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+#library {
+    display: flex;
+    flex-direction: column;
+}
+
+#library > * {
+    margin: 0.3em
+}
+
+form {
+    display: grid;
+    grid-template-columns: 0.25fr 1fr;
+}
+
+#bookshelf {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+li.book {
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+    z-index: auto;
+}
+
+li.hidden > .buttons {
+    display: none;
+}
+
+.book.seen {
+    border: 2px solid yellow;
+}
+
+ul .read.seen {
+    border: 2px solid blue;
+}
