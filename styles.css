@@ -15,12 +15,17 @@ form {
 #bookshelf {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-gap:2em;
 }
 
 li.book {
     list-style-type:none;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 10em;
+
 }
 
 .hidden {
@@ -38,5 +43,5 @@ li.hidden > .buttons {
 }
 
 ul .read.seen {
-    border: 2px solid blue;
+    border: 2px solid green;
 }
